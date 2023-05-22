@@ -11,6 +11,14 @@ main section.categories-show {
     gap: 1.5em;
     grid-template-rows: min-content;
 
+    .sold-out-banner {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 10px; /* Adjust the value as per your preference */
+      background-color: red;
+      color: white;
+    }
+
     @media screen and (max-width: 1500px) {
       grid-template-columns: 1fr 1fr;
     }
@@ -39,7 +47,8 @@ main section.categories-show {
       text-align: center;
       border-radius: 0.25em;
       border: 0.1em solid rgba(0, 130, 29, 0.3);
-      box-shadow: rgba(0, 130, 29, 0.16) 0px 3px 6px, rgba(0, 130, 29, 0.23) 0px 3px 6px;
+      box-shadow: rgba(0, 130, 29, 0.16) 0px 3px 6px,
+        rgba(0, 130, 29, 0.23) 0px 3px 6px;
       // transition: opacity 300ms linear;
 
       &:hover {
