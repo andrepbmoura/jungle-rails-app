@@ -1,0 +1,17 @@
+<div class="line-item">
+  <div class="line-item-image">
+    <%= image_tag line_item.product.image.url, alt: line_item.product.name, class: "img-thumbnail" %>
+  </div>
+  <div class="line-item-details">
+    <h4><%= line_item.product.name %></h4>
+    <p><%= line_item.product.description %></p>
+  </div>
+  <div class="line-item-quantity">
+    <strong>Quantity:</strong>
+    <%= line_item.quantity %>
+  </div>
+  <div class="line-item-total">
+    <strong>Total:</strong>
+    <%= humanized_money_with_symbol line_item.item_price * line_item.quantity %>
+  </div>
+</div>
